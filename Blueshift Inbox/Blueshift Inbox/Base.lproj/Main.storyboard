@@ -114,6 +114,9 @@
                                         <rect key="frame" x="0.0" y="604.5" width="374" height="34.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Custom Inbox UI with APP Theme"/>
+                                        <connections>
+                                            <segue destination="e2i-ob-6Do" kind="show" id="OXG-bx-ivb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -126,10 +129,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="npi-Ru-cui" secondAttribute="trailing" constant="20" id="ISe-9S-gE5"/>
-                            <constraint firstItem="npi-Ru-cui" firstAttribute="height" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.71317" priority="750" id="YwL-qU-gD8"/>
                             <constraint firstItem="npi-Ru-cui" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dUc-D7-EE6"/>
                             <constraint firstItem="npi-Ru-cui" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="hO3-w6-dKy"/>
-                            <constraint firstItem="npi-Ru-cui" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ht6-QR-d2e"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Blueshift Inbox" largeTitleDisplayMode="always" id="235-z2-Amj"/>
@@ -336,8 +337,52 @@
             </objects>
             <point key="canvasLocation" x="4420" y="-68"/>
         </scene>
+        <!--Mobile inbox-->
+        <scene sceneID="qc4-xX-TEv">
+            <objects>
+                <viewController title="Mobile inbox" id="e2i-ob-6Do" customClass="CustomThemeInboxViewController" customModule="Blueshift_Inbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oMt-U1-ncX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blueshift-plain" translatesAutoresizingMaskIntoConstraints="NO" id="a5k-3x-rvJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g2R-52-tLb">
+                                <rect key="frame" x="0.0" y="92" width="414" height="804"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yha-bI-dum"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="g2R-52-tLb" secondAttribute="bottom" id="BFN-oe-GlI"/>
+                            <constraint firstItem="g2R-52-tLb" firstAttribute="top" secondItem="Yha-bI-dum" secondAttribute="top" id="E9y-Dv-xYQ"/>
+                            <constraint firstItem="Yha-bI-dum" firstAttribute="trailing" secondItem="a5k-3x-rvJ" secondAttribute="trailing" id="K3h-tl-qyj"/>
+                            <constraint firstAttribute="bottom" secondItem="a5k-3x-rvJ" secondAttribute="bottom" id="dxt-tb-Hx6"/>
+                            <constraint firstItem="g2R-52-tLb" firstAttribute="leading" secondItem="Yha-bI-dum" secondAttribute="leading" id="fez-pF-OX9"/>
+                            <constraint firstItem="Yha-bI-dum" firstAttribute="trailing" secondItem="g2R-52-tLb" secondAttribute="trailing" id="oye-rx-AlH"/>
+                            <constraint firstItem="a5k-3x-rvJ" firstAttribute="leading" secondItem="Yha-bI-dum" secondAttribute="leading" id="sRy-Jg-hWT"/>
+                            <constraint firstItem="a5k-3x-rvJ" firstAttribute="top" secondItem="oMt-U1-ncX" secondAttribute="top" id="tBE-n5-YcM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="doS-BZ-Cf6"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="g2R-52-tLb" id="Rfg-S2-Lnl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8yw-T2-fG6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1057.9710144927537" y="778.79464285714278"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Blueshift-plain" width="270" height="538.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

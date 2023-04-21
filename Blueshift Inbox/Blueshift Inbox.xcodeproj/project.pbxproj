@@ -29,8 +29,9 @@
 		91D09145296EBC520082EE3B /* CustomInboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D09144296EBC520082EE3B /* CustomInboxTableViewCell.swift */; };
 		91D09147296EBC690082EE3B /* CustomInboxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D09146296EBC690082EE3B /* CustomInboxTableViewCell.xib */; };
 		91E7C50429F292F1000E7C9D /* Inbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 91E7C50229F28F6F000E7C9D /* Inbox.json */; };
-		91E7C50929F29DC1000E7C9D /* CustomThemeInboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E7C50829F29DC1000E7C9D /* CustomThemeInboxTableViewController.swift */; };
+		91E7C50929F29DC1000E7C9D /* CustomThemeInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E7C50829F29DC1000E7C9D /* CustomThemeInboxViewController.swift */; };
 		91E7C50B29F29DEE000E7C9D /* CustomThemeInboxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E7C50A29F29DEE000E7C9D /* CustomThemeInboxTableViewCell.xib */; };
+		91E7C50D29F2A45F000E7C9D /* CustomThemeInboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E7C50C29F2A45F000E7C9D /* CustomThemeInboxTableViewCell.swift */; };
 		F0B876E922840CA78F13D101 /* Pods_Blueshift_Inbox_Blueshift_InboxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB85E20182B641AE458BA7A /* Pods_Blueshift_Inbox_Blueshift_InboxUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,8 +85,9 @@
 		91D09144296EBC520082EE3B /* CustomInboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInboxTableViewCell.swift; sourceTree = "<group>"; };
 		91D09146296EBC690082EE3B /* CustomInboxTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInboxTableViewCell.xib; sourceTree = "<group>"; };
 		91E7C50229F28F6F000E7C9D /* Inbox.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Inbox.json; sourceTree = "<group>"; };
-		91E7C50829F29DC1000E7C9D /* CustomThemeInboxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomThemeInboxTableViewController.swift; sourceTree = "<group>"; };
+		91E7C50829F29DC1000E7C9D /* CustomThemeInboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomThemeInboxViewController.swift; sourceTree = "<group>"; };
 		91E7C50A29F29DEE000E7C9D /* CustomThemeInboxTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomThemeInboxTableViewCell.xib; sourceTree = "<group>"; };
+		91E7C50C29F2A45F000E7C9D /* CustomThemeInboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomThemeInboxTableViewCell.swift; sourceTree = "<group>"; };
 		91E8FEEB5346D5811EE73F95 /* Pods_Blueshift_Inbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blueshift_Inbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7119C1D31677CB410B37C60 /* Pods-Blueshift Inbox-Blueshift InboxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blueshift Inbox-Blueshift InboxUITests.debug.xcconfig"; path = "Target Support Files/Pods-Blueshift Inbox-Blueshift InboxUITests/Pods-Blueshift Inbox-Blueshift InboxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F23A2A6C88CB12D58B9A07F5 /* Pods-Blueshift Inbox-Blueshift InboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blueshift Inbox-Blueshift InboxUITests.release.xcconfig"; path = "Target Support Files/Pods-Blueshift Inbox-Blueshift InboxUITests/Pods-Blueshift Inbox-Blueshift InboxUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -238,8 +240,9 @@
 		91E7C50729F29D48000E7C9D /* Custom Inbox UI with App Theme */ = {
 			isa = PBXGroup;
 			children = (
+				91E7C50C29F2A45F000E7C9D /* CustomThemeInboxTableViewCell.swift */,
 				91E7C50A29F29DEE000E7C9D /* CustomThemeInboxTableViewCell.xib */,
-				91E7C50829F29DC1000E7C9D /* CustomThemeInboxTableViewController.swift */,
+				91E7C50829F29DC1000E7C9D /* CustomThemeInboxViewController.swift */,
 			);
 			path = "Custom Inbox UI with App Theme";
 			sourceTree = "<group>";
@@ -512,10 +515,11 @@
 			files = (
 				91596591296D75A400CC8F05 /* ViewController.swift in Sources */,
 				91D09143296EBBD00082EE3B /* InboxWithCustomCellAsDefault.swift in Sources */,
+				91E7C50D29F2A45F000E7C9D /* CustomThemeInboxTableViewCell.swift in Sources */,
 				91837835296EC84300E1900B /* InboxWithCustomDateFormat.swift in Sources */,
 				91837841296ED93700E1900B /* OfferInboxTableViewCell.swift in Sources */,
 				9159658D296D75A400CC8F05 /* AppDelegate.swift in Sources */,
-				91E7C50929F29DC1000E7C9D /* CustomThemeInboxTableViewController.swift in Sources */,
+				91E7C50929F29DC1000E7C9D /* CustomThemeInboxViewController.swift in Sources */,
 				91D09145296EBC520082EE3B /* CustomInboxTableViewCell.swift in Sources */,
 				9159658F296D75A400CC8F05 /* SceneDelegate.swift in Sources */,
 				91837838296ECCA100E1900B /* InboxWithMessageSort.swift in Sources */,
