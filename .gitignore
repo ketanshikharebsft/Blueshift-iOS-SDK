@@ -4,6 +4,7 @@
 
 # Ignore bundler config
 Pods/Pods.xcodeproj/xcuserdata/
+**/Pods/**
 
 # Ignore all logfiles and tempfiles.
 */xcuserdata/*

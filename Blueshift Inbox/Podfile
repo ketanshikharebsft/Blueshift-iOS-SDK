@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+$bsftLocalPath = '/Users/ketanshikhare/Documents/Blueshift-Repository/Blueshift-iOS-SDK'
+
+target 'Blueshift Inbox' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Blueshift Inbox
+  pod 'BlueShift-iOS-SDK', :path => $bsftLocalPath
+
+  target 'Blueshift InboxTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Blueshift InboxUITests' do
+    # Pods for testing
+  end
+
+end

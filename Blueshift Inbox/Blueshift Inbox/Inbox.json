@@ -1,0 +1,383 @@
+{
+    "content": [
+        {
+            "account_uuid": "5b8f3aae-cc73-4ccf-81ea-5ef3cc2c3f56",
+            "created_at": 1681884454,
+            "data": {
+                "bsft_account_uuid": "5b8f3aae-cc73-4ccf-81ea-5ef3cc2c3f56",
+                "bsft_experiment_uuid": "76394ff7-3e0a-564a-7f01-086edafdaf37",
+                "bsft_message_uuid": "349116ca-3b7a-4393-9dd9-e42bbedb440c",
+                "bsft_transaction_uuid": "21fd11af-eb41-4fd0-b61f-44ef3c9beb4b",
+                "bsft_user_uuid": "f42ec261-effc-4afc-a8f1-370dbab0f085",
+                "inapp": {
+                    "content": {
+                        "actions": [
+                            {
+                                "android_link": "//deeplink",
+                                "background_color": "#4caf50",
+                                "ios_link": "//deeplink",
+                                "text": "",
+                                "text_color": "#fafafa",
+                                "type": "open"
+                            }
+                        ],
+                        "icon": "",
+                        "icon_image": "",
+                        "message": "This inapp + inbox slide in template."
+                    },
+                    "content_style": {
+                        "icon_background_color": "#000000",
+                        "icon_background_radius": 0,
+                        "icon_color": "#ffffff",
+                        "icon_image_background_color": "#ffffff",
+                        "icon_image_background_radius": 0,
+                        "icon_image_padding": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "icon_padding": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "icon_size": 22,
+                        "message_color": "#000000",
+                        "message_gravity": "start",
+                        "message_padding": {
+                            "bottom": 10,
+                            "left": 10,
+                            "right": 10,
+                            "top": 10
+                        },
+                        "message_size": 14
+                    },
+                    "content_style_dark": {
+                        "icon_background_color": "#000000",
+                        "icon_background_radius": 0,
+                        "icon_color": "#ffffff",
+                        "icon_image_background_color": "#ffffff",
+                        "icon_image_background_radius": 0,
+                        "icon_image_padding": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "icon_padding": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "icon_size": 22,
+                        "message_color": "#000000",
+                        "message_gravity": "start",
+                        "message_padding": {
+                            "bottom": 10,
+                            "left": 10,
+                            "right": 10,
+                            "top": 10
+                        },
+                        "message_size": 14
+                    },
+                    "display_on_android": "",
+                    "display_on_ios": "",
+                    "expires_at": 1902997743,
+                    "scope": "inbox+inapp",
+                    "template_style": {
+                        "background_color": "#E7F6FD",
+                        "background_radius": 10,
+                        "enable_background_action": false,
+                        "height": -2,
+                        "margin": {
+                            "bottom": 0,
+                            "left": 10,
+                            "right": 10,
+                            "top": 10
+                        },
+                        "position": "top",
+                        "width": 100
+                    },
+                    "template_style_dark": {
+                        "background_color": "#eeeeee",
+                        "background_radius": 10,
+                        "enable_background_action": false,
+                        "height": -2,
+                        "margin": {
+                            "bottom": 0,
+                            "left": 10,
+                            "right": 10,
+                            "top": 10
+                        },
+                        "position": "top",
+                        "width": 100
+                    },
+                    "trigger": "now",
+                    "type": "slide_in_banner"
+                },
+                "inbox": {
+                    "details": "This is short description. ",
+                    "icon": "https://picsum.photos/id/10/200/300",
+                    "title": "This is inapp+ inbox slide in template\t"
+                },
+                "timestamp": "2023-04-19T06:07:30.104538933Z"
+            },
+            "message_uuid": "349116ca-3b7a-4393-9dd9-e42bbedb440c",
+            "status": "unread",
+            "user_uuid": "f42ec261-effc-4afc-a8f1-370dbab0f085"
+        },
+        {
+            "account_uuid": "5b8f3aae-cc73-4ccf-81ea-5ef3cc2c3f56",
+            "created_at": 1681884454,
+            "data": {
+                "bsft_account_uuid": "5b8f3aae-cc73-4ccf-81ea-5ef3cc2c3f56",
+                "bsft_experiment_uuid": "a246f1e5-8822-348d-7907-dea6d6618a4e",
+                "bsft_message_uuid": "9b5ac7af-f9a4-44be-8f92-fd5b3df0714e",
+                "bsft_transaction_uuid": "21fd11af-eb41-4fd0-b61f-44ef3c9beb4b",
+                "bsft_user_uuid": "f42ec261-effc-4afc-a8f1-370dbab0f085",
+                "inapp": {
+                    "content": {
+                        "html": "<!DOCTYPE html>\n<html xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" lang=\"en\">\n\n<head>\n\t<title></title>\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]-->\n\t<style>\n\t\t* {\n\t\t\tbox-sizing: border-box;\n\t\t}\n\n\t\tbody {\n\t\t\tmargin: 0;\n\t\t\tpadding: 0;\n\t\t}\n\n\t\ta[x-apple-data-detectors] {\n\t\t\tcolor: inherit !important;\n\t\t\ttext-decoration: inherit !important;\n\t\t}\n\n\t\t#MessageViewBody a {\n\t\t\tcolor: inherit;\n\t\t\ttext-decoration: none;\n\t\t}\n\n\t\tp {\n\t\t\tline-height: inherit\n\t\t}\n\n\t\t.desktop_hide,\n\t\t.desktop_hide table {\n\t\t\tmso-hide: all;\n\t\t\tdisplay: none;\n\t\t\tmax-height: 0px;\n\t\t\toverflow: hidden;\n\t\t}\n\n\t\t.image_block img+div {\n\t\t\tdisplay: none;\n\t\t}\n\n\t\t@media (max-width:520px) {\n\t\t\t.row-content {\n\t\t\t\twidth: 100% !important;\n\t\t\t}\n\n\t\t\t.mobile_hide {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\n\t\t\t.video_block .sizer {\n\t\t\t\tmax-width: none !important;\n\t\t\t}\n\n\t\t\t.stack .column {\n\t\t\t\twidth: 100%;\n\t\t\t\tdisplay: block;\n\t\t\t}\n\n\t\t\t.mobile_hide {\n\t\t\t\tmin-height: 0;\n\t\t\t\tmax-height: 0;\n\t\t\t\tmax-width: 0;\n\t\t\t\toverflow: hidden;\n\t\t\t\tfont-size: 0px;\n\t\t\t}\n\n\t\t\t.desktop_hide,\n\t\t\t.desktop_hide table {\n\t\t\t\tdisplay: table !important;\n\t\t\t\tmax-height: none !important;\n\t\t\t}\n\t\t}\n\t</style>\n</head>\n\n<body style=\"background-color: #FFFFFF; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;\">\n\t<table class=\"nl-container\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF;\">\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td>\n\t\t\t\t\t<table class=\"row row-1\" align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t\t<table class=\"row-content stack\" align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 500px;\" width=\"500\">\n\t\t\t\t\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t<td class=\"column column-1\" width=\"100%\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<table class=\"heading_block block-1\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class=\"pad\" style=\"text-align:center;width:100%;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h1 style=\"margin: 0; color: #555555; direction: ltr; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; font-size: 23px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0;\">Friends: Joey's Bad Birthday Gift (Season 4 Clip) | TBS</h1>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<table class=\"video_block block-2\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr style=\"box-sizing: content-box;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class=\"pad\" style=\"box-sizing: content-box; width: 100%; padding-left: 0; padding-right: 0;\" width=\"100%\"><!--[if (mso)|(IE)]><table width=\"500\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\"><tr><td><![endif]-->\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"sizer\" align=\"center\" style=\"box-sizing: content-box; max-width: 500px; min-width: 320px;\"><!--[if !vml]><!--><a class=\"video-preview\" tabindex=\"0\" href=\"https://www.youtube.com/watch?v=221F55VPp2M\" target=\"_blank\" title=\"Friends: Joey's Bad Birthday Gift (Season 4 Clip) | TBS\" style=\"box-sizing: content-box; background-color: #5b5f66; background-image: radial-gradient(circle at center, #5b5f66, #1d1f21); display: block; text-decoration: none;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div style=\"box-sizing: content-box;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" background=\"https://img.youtube.com/vi/221F55VPp2M/maxresdefault.jpg\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; box-sizing: content-box; background-image: url(https://img.youtube.com/vi/221F55VPp2M/maxresdefault.jpg); background-size: cover; min-height: 180px; min-width: 320px;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr style=\"box-sizing: content-box;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td width=\"25%\" style=\"box-sizing: content-box;\"><img src=\"https://app-rsrc.getbee.io/public/resources/multiparser/video_block/video_ratio_16-9.gif\" alt=\"ratio\" width=\"100%\" border=\"0\" style=\"display: block; box-sizing: content-box; height: auto; opacity: 0; visibility: hidden;\"></td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td width=\"50%\" align=\"center\" valign=\"middle\" style=\"box-sizing: content-box; vertical-align: middle;\"><img src=\"https://app-rsrc.getbee.io/public/resources/components/widgetBar/video-content-icon-sets/light/type-01.png\" width=\"65\" height=\"65\" style=\"display: block; height: auto; box-sizing: content-box;\"></td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td width=\"25%\" style=\"box-sizing: content-box;\">&#160;</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</a><!--<![endif]--><!--[if vml]>\n<v:group xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w=\"urn:schemas-microsoft-com:office:word\" coordsize=\"500,281\" coordorigin=\"0,0\" href=\"https://www.youtube.com/watch?v=221F55VPp2M\" style=\"width:500px;height:281px;\">\n<v:rect fill=\"t\" stroked=\"f\" style=\"position:absolute;width:500;height:281;\">\n<v:fill src=\"https://img.youtube.com/vi/221F55VPp2M/maxresdefault.jpg\" type=\"frame\"/>\n</v:rect>\n<v:oval fill=\"t\" strokecolor=\"#ffffff\" strokeweight=\"3px\" style=\"position:absolute;left:218;top:108;width:65;height:65\">\n<v:fill color=\"#ffffff\" opacity=\"100%\" />\n</v:oval>\n<v:shape coordsize=\"24,32\" path=\"m,l,32,24,16,xe\" fillcolor=\"#000000\" stroked=\"f\" style=\"position:absolute;left:241;top:124;width:23;height:33;\" />\n</v:group>\n<![endif]--></div><!--[if (mso)|(IE)]></td></tr></table><![endif]-->\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<table class=\"button_block block-3\" width=\"100%\" border=\"0\" cellpadding=\"10\" cellspacing=\"0\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class=\"pad\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"alignment\" align=\"center\"><!--[if mso]><v:roundrect xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w=\"urn:schemas-microsoft-com:office:word\" style=\"height:38px;width:80px;v-text-anchor:middle;\" arcsize=\"11%\" stroke=\"false\" fillcolor=\"#3AAEE0\"><w:anchorlock/><v:textbox inset=\"0px,0px,0px,0px\"><center style=\"color:#ffffff; font-family:Arial, sans-serif; font-size:14px\"><![endif]-->\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div style=\"text-decoration:none;display:inline-block;color:#ffffff;background-color:#3AAEE0;border-radius:4px;width:auto;border-top:0px solid transparent;font-weight:400;border-right:0px solid transparent;border-bottom:0px solid transparent;border-left:0px solid transparent;padding-top:5px;padding-bottom:5px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;text-align:center;mso-border-alt:none;word-break:keep-all;\"><span style=\"padding-left:20px;padding-right:20px;font-size:14px;display:inline-block;letter-spacing:normal;\"><span style=\"font-family: Arial, Helvetica Neue, Helvetica, sans-serif; line-height: 28px;\">Button</span></span></div><!--[if mso]></center></v:textbox></v:roundrect><![endif]-->\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t</tbody>\n\t\t\t\t\t</table>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table><!-- End -->\n</body>\n\n</html>"
+                    },
+                    "display_on_android": "",
+                    "display_on_ios": "",
+                    "expires_at": 1902997743,
+                    "scope": "inbox+inapp",
+                    "template_style": {
+                        "background_color": "#f0f0f0",
+                        "background_radius": 10,
+                        "height": -1,
+                        "margin": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "width": -1
+                    },
+                    "template_style_dark": {
+                        "background_color": "#f0f0f0",
+                        "background_radius": 10,
+                        "height": -1,
+                        "margin": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "width": -1
+                    },
+                    "trigger": "now",
+                    "type": "html"
+                },
+                "inbox": {
+                    "details": "Friends: Joey's Bad Birthday Gift (Season 4 Clip) | TBS",
+                    "icon": "https://picsum.photos/id/1011/200/300",
+                    "title": "This is inapp+inbox v html template\t"
+                },
+                "timestamp": "2023-04-20T09:07:34.489223751Z"
+            },
+            "message_uuid": "9b5ac7af-f9a4-44be-8f92-fd5b3df0714e",
+            "status": "unread",
+            "user_uuid": "f42ec261-effc-4afc-a8f1-370dbab0f085"
+        },
+        {
+            "account_uuid": "5b8f3aae-cc73-4ccf-81ea-5ef3cc2c3f56",
+            "created_at": 1681884454,
+            "data": {
+                "bsft_account_uuid": "5b8f3aae-cc73-4ccf-81ea-5ef3cc2c3f56",
+                "bsft_experiment_uuid": "0d65e6f7-a149-dd3e-ddcb-f8e3e4739331",
+                "bsft_message_uuid": "4ab0f668-5b47-4955-b171-6c287e4512bd",
+                "bsft_transaction_uuid": "21fd11af-eb41-4fd0-b61f-44ef3c9beb4b",
+                "bsft_user_uuid": "f42ec261-effc-4afc-a8f1-370dbab0f085",
+                "inapp": {
+                    "content": {
+                        "actions": [
+                            {
+                                "android_link": "//buy",
+                                "background_color": "#393759",
+                                "background_radius": 2,
+                                "ios_link": "//buy",
+                                "margin": {
+                                    "bottom": 5,
+                                    "left": 5,
+                                    "right": 5,
+                                    "top": 5
+                                },
+                                "text": "BUY",
+                                "text_color": "#ffffff",
+                                "type": "open"
+                            },
+                            {
+                                "android_link": "//view",
+                                "background_color": "#393759",
+                                "background_radius": 2,
+                                "ios_link": "//view",
+                                "margin": {
+                                    "bottom": 5,
+                                    "left": 5,
+                                    "right": 5,
+                                    "top": 5
+                                },
+                                "text": "VIEW",
+                                "text_color": "#ffffff",
+                                "type": "open"
+                            }
+                        ],
+                        "message": "",
+                        "title": "This is inapp + inbox modal\ttemplate"
+                    },
+                    "content_style": {
+                        "actions_margin": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "actions_padding": {
+                            "bottom": 5,
+                            "left": 5,
+                            "right": 5,
+                            "top": 0
+                        },
+                        "message_color": "#000000",
+                        "message_gravity": "center",
+                        "message_margin": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "message_padding": {
+                            "bottom": 20,
+                            "left": 6,
+                            "right": 6,
+                            "top": 20
+                        },
+                        "message_size": 14,
+                        "title_background_color": null,
+                        "title_color": "#000000",
+                        "title_gravity": "center",
+                        "title_margin": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "title_padding": {
+                            "bottom": 0,
+                            "left": 5,
+                            "right": 5,
+                            "top": 20
+                        },
+                        "title_size": 22
+                    },
+                    "content_style_dark": {
+                        "actions_margin": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "actions_padding": {
+                            "bottom": 5,
+                            "left": 5,
+                            "right": 5,
+                            "top": 0
+                        },
+                        "message_color": "#000000",
+                        "message_gravity": "center",
+                        "message_margin": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "message_padding": {
+                            "bottom": 20,
+                            "left": 6,
+                            "right": 6,
+                            "top": 20
+                        },
+                        "message_size": 14,
+                        "title_background_color": null,
+                        "title_color": "#000000",
+                        "title_gravity": "center",
+                        "title_margin": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "title_padding": {
+                            "bottom": 0,
+                            "left": 5,
+                            "right": 5,
+                            "top": 20
+                        },
+                        "title_size": 22
+                    },
+                    "display_on_android": "",
+                    "display_on_ios": "",
+                    "expires_at": 1902997743,
+                    "scope": "inbox+inapp",
+                    "template_style": {
+                        "background_color": "#ffffff",
+                        "background_image": null,
+                        "background_radius": 10,
+                        "close_button": {
+                            "background_color": "#000000",
+                            "code": "f00d",
+                            "show": false,
+                            "text": "",
+                            "text_color": "#ffffff"
+                        },
+                        "height": -1,
+                        "margin": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "width": -1
+                    },
+                    "template_style_dark": {
+                        "background_color": "#ffffff",
+                        "background_image": null,
+                        "background_radius": 10,
+                        "close_button": {
+                            "background_color": "#000000",
+                            "code": "f00d",
+                            "show": false,
+                            "text": "",
+                            "text_color": "#ffffff"
+                        },
+                        "height": -1,
+                        "margin": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        },
+                        "width": -1
+                    },
+                    "trigger": "now",
+                    "type": "modal"
+                },
+                "inbox": {
+                    "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+                    "icon": "https://picsum.photos/id/102/200/300",
+                    "title": "This is inapp + inbox modal template"
+                },
+                "timestamp": "2023-04-21T12:17:02.737490468Z"
+            },
+            "message_uuid": "4ab0f668-5b47-4955-b171-6c287e4512bd",
+            "status": "unread",
+            "user_uuid": "f42ec261-effc-4afc-a8f1-370dbab0f085"
+        }
+    ],
+    "status": "success"
+}

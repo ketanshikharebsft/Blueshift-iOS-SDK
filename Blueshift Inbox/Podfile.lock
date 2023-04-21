@@ -1,0 +1,16 @@
+PODS:
+  - BlueShift-iOS-SDK (2.3.1)
+
+DEPENDENCIES:
+  - BlueShift-iOS-SDK (from `/Users/ketanshikhare/Documents/Blueshift-Repository/Blueshift-iOS-SDK`)
+
+EXTERNAL SOURCES:
+  BlueShift-iOS-SDK:
+    :path: "/Users/ketanshikhare/Documents/Blueshift-Repository/Blueshift-iOS-SDK"
+
+SPEC CHECKSUMS:
+  BlueShift-iOS-SDK: 88e5999e4755b737d7119b6f7fd0681f22aea2df
+
+PODFILE CHECKSUM: a82471ade8b17214d70b1870cceea132b8ea5837
+
+COCOAPODS: 1.12.0
