@@ -14,16 +14,33 @@ class CustomThemeInboxViewController: UIViewController, UITableViewDelegate, UIT
     var viewmodel: BlueshiftInboxViewModel?
     let cellIdentifier = "CustomThemeInboxTableViewCellIdentifier"
     var activityIndicatorView: UIActivityIndicatorView?
+    var unreadMessageCountDidChangeToken: NSObjectProtocol?
+    var inboxUnreadMessageCountDidChange: NSObjectProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupObservers()
         setupViewModel()
         setupActivityIndicator()
         setupTableView()
-        //Fetch local cached data and show in inbox tableview
-        reloadTableView()
         //Sync inbox on load
         syncInbox()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //Fetch local cached data and show in inbox tableview
+        setupObservers()
+        reloadTableView()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let unreadMessageCountDidChangeToken = unreadMessageCountDidChangeToken {
+            NotificationCenter.default.removeObserver(unreadMessageCountDidChangeToken)
+        }
+        if let inboxUnreadMessageCountDidChange = inboxUnreadMessageCountDidChange {
+            NotificationCenter.default.removeObserver(inboxUnreadMessageCountDidChange)
+        }
     }
     
     func setupViewModel() {
@@ -130,9 +147,15 @@ extension CustomThemeInboxViewController {
     
     func handleDeleteMessageAt(indexPath: IndexPath) {
         let message: BlueshiftInboxMessage? = viewmodel?.item(at: indexPath) ?? nil
-        BlueshiftInboxManager.delete(message) { [weak self]result in
+        BlueshiftInboxManager.delete(message) { [weak self] status, errorMessage  in
             DispatchQueue.main.async {
-                self?.reloadTableView()
+                if status {
+                    self?.reloadTableView()
+                } else {
+                    let alert = UIAlertController(title: "Failed to delete message!", message: errorMessage, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Okay", style: .cancel))
+                    self?.navigationController?.present(alert, animated: true)
+                }
             }
         }
     }

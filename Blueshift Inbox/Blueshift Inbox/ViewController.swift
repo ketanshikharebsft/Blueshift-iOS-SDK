@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     //Set observers to update the unread message badge count
     func setupObservers() {
         //Setup observer to listen to new in-app message changes and refresh the unread message count
-        NotificationCenter.default.addObserver(forName: NSNotification.Name("BlueshiftInboxUnreadMessageCountDidChange"), object: nil, queue: OperationQueue.current) { notification in
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(kBSInboxUnreadMessageCountDidChange), object: nil, queue: OperationQueue.current) { notification in
             BlueshiftInboxManager.getInboxUnreadMessagesCount({ status, count in
                 if status {
                     self.badgeLabel?.text = "\(count)"
