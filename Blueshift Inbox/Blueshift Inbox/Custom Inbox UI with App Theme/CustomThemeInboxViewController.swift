@@ -45,6 +45,21 @@ class CustomThemeInboxViewController: UIViewController, UITableViewDelegate, UIT
     
     func setupViewModel() {
         viewmodel = BlueshiftInboxViewModel()
+        //Sort the messages to show unread messages on the top
+        viewmodel?.messageComparator = {msg1, msg2 in
+            if msg1.readStatus && !msg2.readStatus {
+                return .orderedDescending
+            } else {
+                return .orderedAscending
+            }
+        }
+        
+        //Set message filter to filter the messages displayed on the screen
+        //Using below filter it will only show the unread messages in the inbox
+//        viewmodel?.messageFilter = { message in
+//            return !message.readStatus
+//        }
+        
         self.title = "Custom Inbox"
     }
     
@@ -75,6 +90,7 @@ class CustomThemeInboxViewController: UIViewController, UITableViewDelegate, UIT
         tableView.tableFooterView = UIView()
         tableView.dataSource = self
         tableView.delegate = self
+        //If you want to use mutliple cells, you can register them all here
         //Register custom tableviewcell
         tableView.register(UINib(nibName: "CustomThemeInboxTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: cellIdentifier)
     }

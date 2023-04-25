@@ -8,6 +8,12 @@
 import Foundation
 import BlueShift_iOS_SDK
 
+
+/// If you want to sort the messages to display in custom order inside inbox based on your usecase, then you can implement
+/// `BlueshiftInboxViewControllerDelegate` on a class and assign the delegate
+/// to the `inboxDelegate` property during the Inbox initialisation.
+///
+
 extension ViewController {
     @IBAction private func showInboxWithMessageSort(_ sender: Any) {
         let navController = BlueshiftInboxNavigationViewController()
@@ -17,7 +23,10 @@ extension ViewController {
     }
 }
 
-
+/// You will need to set comparator closure to the `messageComparator` variable.
+/// The closure gets two `BlueshiftInboxMessage` objets for comparision and
+/// it should return the `ComparisonResult` for the two messages.
+/// Refer to below example to see how it works.
 public class MessageSortInboxDelegate: NSObject, BlueshiftInboxViewControllerDelegate {
 
     public var messageComparator: ((BlueshiftInboxMessage, BlueshiftInboxMessage) -> ComparisonResult)? = {msg1, msg2 in
@@ -37,6 +46,15 @@ public class MessageSortInboxDelegate: NSObject, BlueshiftInboxViewControllerDel
 //        if let msg1Title = msg1.title, let msg2Title = msg2.title {
 //            return msg1Title.caseInsensitiveCompare(msg2Title)
 //        }
+        
+        
+//        //Sort messages to show unread messages on the top
+//            if msg1.readStatus && !msg2.readStatus {
+//                return .orderedDescending
+//            } else {
+//                return .orderedAscending
+//            }
+
         
         //Default return same order
         return .orderedSame

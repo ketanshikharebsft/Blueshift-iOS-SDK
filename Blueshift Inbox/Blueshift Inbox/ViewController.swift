@@ -64,6 +64,7 @@ class ViewController: UIViewController {
     }
     
     
+    /// Using this method, you can create the inbox using the inboxViewController.
     @IBAction func showDefaultInboxUsingCode(_ sender: Any?) {
         let inboxVC = BlueshiftInboxViewController()
         //Customization
