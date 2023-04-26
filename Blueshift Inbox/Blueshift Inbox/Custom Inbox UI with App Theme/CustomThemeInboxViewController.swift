@@ -158,7 +158,7 @@ extension CustomThemeInboxViewController {
         message.readStatus = true
         self.activityIndicatorView?.startAnimating()
         tableView.reloadRows(at: [indexPath], with: .automatic)
-        BlueshiftInboxManager.showNotification(for: message);
+        BlueshiftInboxManager.showNotification(for: message, inboxInAppDelegate: self);
     }
     
     func handleDeleteMessageAt(indexPath: IndexPath) {
@@ -174,5 +174,26 @@ extension CustomThemeInboxViewController {
                 }
             }
         }
+    }
+}
+
+extension CustomThemeInboxViewController: BlueshiftInboxInAppNotificationDelegate {
+    func inboxInAppNotificationActionTapped(withDeepLink deepLink: String?, options: [String : Any] = [:]) {
+        //handle inbox originated in-app notification deep links
+        let vc = UIViewController()
+        vc.title = "Deep link screen"
+        vc.view.backgroundColor = .white
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: vc.view.frame.size.width - 50, height: 400))
+        label.text = deepLink
+        label.textColor = .black
+        
+        label.center = vc.view.center
+        label.numberOfLines = 0
+        vc.view.addSubview(label)
+        navigationController?.show(vc, sender: nil)
+    }
+    
+    func isInboxNotificationActionTappedImplementedByHostApp() -> Bool {
+        return true
     }
 }

@@ -22,7 +22,27 @@ extension ViewController {
         navController.showDoneButton = false
         navController.title = "Default Inbox"
         navController.enableLargeTitle = true
+        navController.showDoneButton = true
+        navController.modalPresentationStyle = .fullScreen
+        navController.inboxDelegate = HandleInboxInAppClickDelegate()
         //present 
         self.present(navController, animated:true, completion: nil)
+    }
+}
+
+class HandleInboxInAppClickDelegate: NSObject, BlueshiftInboxViewControllerDelegate {
+    func inboxNotificationActionTapped(withDeepLink deepLink: String?, inboxViewController inboxVC: BlueshiftInboxViewController?, options: [String : Any] = [:]) {
+        //handle inbox originated in-app notification deep links
+        let vc = UIViewController()
+        vc.title = "Deep link screen"
+        vc.view.backgroundColor = .white
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: vc.view.frame.size.width - 50, height: 400))
+        label.text = deepLink
+        label.textColor = .black
+        
+        label.center = vc.view.center
+        label.numberOfLines = 0
+        vc.view.addSubview(label)
+        inboxVC?.navigationController?.show(vc, sender: nil)
     }
 }
