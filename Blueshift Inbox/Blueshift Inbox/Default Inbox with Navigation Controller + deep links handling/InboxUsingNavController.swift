@@ -19,7 +19,6 @@ extension ViewController {
         //customization
         navController.unreadBadgeColor = UIColor.blue
         navController.refreshControlColor = UIColor.systemPink
-        navController.showDoneButton = false
         navController.title = "Default Inbox"
         navController.enableLargeTitle = true
         navController.showDoneButton = true
@@ -30,6 +29,7 @@ extension ViewController {
     }
 }
 
+//Deep link handling
 class HandleInboxInAppClickDelegate: NSObject, BlueshiftInboxViewControllerDelegate {
     func inboxNotificationActionTapped(withDeepLink deepLink: String?, inboxViewController inboxVC: BlueshiftInboxViewController?, options: [String : Any] = [:]) {
         //handle inbox originated in-app notification deep links

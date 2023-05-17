@@ -164,7 +164,7 @@
 				9159658C296D75A400CC8F05 /* AppDelegate.swift */,
 				9159658E296D75A400CC8F05 /* SceneDelegate.swift */,
 				91596590296D75A400CC8F05 /* ViewController.swift */,
-				91D0913E296EB6380082EE3B /* Default Inbox with Navigation Controller */,
+				91D0913E296EB6380082EE3B /* Default Inbox with Navigation Controller + deep links handling */,
 				91D09141296EBB910082EE3B /* Inbox with Custom Cell as default cell  */,
 				91837833296EC7ED00E1900B /* Custom date format */,
 				91837836296ECC8600E1900B /* Sort Messages */,
@@ -231,12 +231,12 @@
 			path = "Filter Messages";
 			sourceTree = "<group>";
 		};
-		91D0913E296EB6380082EE3B /* Default Inbox with Navigation Controller */ = {
+		91D0913E296EB6380082EE3B /* Default Inbox with Navigation Controller + deep links handling */ = {
 			isa = PBXGroup;
 			children = (
 				91D0913F296EB8860082EE3B /* InboxUsingNavController.swift */,
 			);
-			path = "Default Inbox with Navigation Controller";
+			path = "Default Inbox with Navigation Controller + deep links handling";
 			sourceTree = "<group>";
 		};
 		91D09141296EBB910082EE3B /* Inbox with Custom Cell as default cell  */ = {

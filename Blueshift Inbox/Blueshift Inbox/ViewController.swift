@@ -21,9 +21,9 @@ class ViewController: UIViewController {
     
     func updateUnreadMessageCount() {
         // Fetch inbox unread message count when screen is loaded to set to initial inbox badge count
-        BlueshiftInboxManager.getInboxUnreadMessagesCount({ status, count in
+        BlueshiftInboxManager.getInboxUnreadMessagesCount({ [weak self] status, count in
             if status {
-                self.badgeLabel?.text = "\(count)"
+                self?.badgeLabel?.text = "\(count)"
             }
         })
     }
@@ -31,12 +31,8 @@ class ViewController: UIViewController {
     //Set observers to update the unread message badge count
     func setupObservers() {
         //Setup observer to listen to new in-app message changes and refresh the unread message count
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(kBSInboxUnreadMessageCountDidChange), object: nil, queue: OperationQueue.current) { notification in
-            BlueshiftInboxManager.getInboxUnreadMessagesCount({ status, count in
-                if status {
-                    self.badgeLabel?.text = "\(count)"
-                }
-            })
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(kBSInboxUnreadMessageCountDidChange), object: nil, queue: OperationQueue.current) { [weak self] _ in
+            self?.updateUnreadMessageCount()
         }
     }
     
@@ -66,13 +62,14 @@ class ViewController: UIViewController {
     
     /// Using this method, you can create the inbox using the inboxViewController.
     @IBAction func showDefaultInboxUsingCode(_ sender: Any?) {
-        let inboxVC = BlueshiftInboxViewController()
+        let inboxVC = BlueshiftInboxViewController()        
         //Customization
         inboxVC.unreadBadgeColor = UIColor.purple
         inboxVC.refreshControl?.tintColor = UIColor.red
         inboxVC.activityIndicatorColor = UIColor.blue
         inboxVC.title = "Default Inbox Using Code"
-        self.navigationController?.pushViewController(inboxVC, animated: true);
+        inboxVC.noMessagesText = "No messages availble \n Come back later!"
+        self.navigationController?.show(inboxVC, sender: nil)
     }
 }
 

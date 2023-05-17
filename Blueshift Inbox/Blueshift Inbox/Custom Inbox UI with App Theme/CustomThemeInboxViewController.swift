@@ -5,6 +5,12 @@
 //  Created by Ketan Shikhare on 21/04/23.
 //
 
+// This example is to demonstrate how you can create inbox screen by your own.
+// For case like when you want use your custom themed inbox UI, you can follow this approach.
+// SDK provides set of methods using you can build your own inbox screen.
+// This is sample example for cutom themed inbox screen.
+
+
 import UIKit
 import BlueShift_iOS_SDK
 
@@ -14,7 +20,7 @@ class CustomThemeInboxViewController: UIViewController, UITableViewDelegate, UIT
     var viewmodel: BlueshiftInboxViewModel?
     let cellIdentifier = "CustomThemeInboxTableViewCellIdentifier"
     var activityIndicatorView: UIActivityIndicatorView?
-    var unreadMessageCountDidChangeToken: NSObjectProtocol?
+    var inAppNotificationDidAppear: NSObjectProtocol?
     var inboxUnreadMessageCountDidChange: NSObjectProtocol?
     
     override func viewDidLoad() {
@@ -35,8 +41,8 @@ class CustomThemeInboxViewController: UIViewController, UITableViewDelegate, UIT
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        if let unreadMessageCountDidChangeToken = unreadMessageCountDidChangeToken {
-            NotificationCenter.default.removeObserver(unreadMessageCountDidChangeToken)
+        if let inAppNotificationDidAppear = inAppNotificationDidAppear {
+            NotificationCenter.default.removeObserver(inAppNotificationDidAppear)
         }
         if let inboxUnreadMessageCountDidChange = inboxUnreadMessageCountDidChange {
             NotificationCenter.default.removeObserver(inboxUnreadMessageCountDidChange)
@@ -59,20 +65,18 @@ class CustomThemeInboxViewController: UIViewController, UITableViewDelegate, UIT
 //        viewmodel?.messageFilter = { message in
 //            return !message.readStatus
 //        }
-        
-        self.title = "Custom Inbox"
     }
     
     func setupObservers() {
         //Add obserber to listen to inbox sync changes.
         //In case if you add pull to refresh, then you can stop the refreshAnimation in this observer
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(kBSInboxUnreadMessageCountDidChange), object: nil, queue: OperationQueue.main) { [weak self] notification in
+        inboxUnreadMessageCountDidChange = NotificationCenter.default.addObserver(forName: NSNotification.Name(kBSInboxUnreadMessageCountDidChange), object: nil, queue: OperationQueue.main) { [weak self] notification in
             if BlueshiftInboxChangeType.sync.rawValue == notification.userInfo?[kBSInboxRefreshType] as? UInt {
                 self?.reloadTableView()
             }
         }
         //Add obserber to listen to stop activity indicator when notification is displayed
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(kBSInAppNotificationDidAppear), object: nil, queue: OperationQueue.main) { [weak self] notification in
+        inAppNotificationDidAppear = NotificationCenter.default.addObserver(forName: NSNotification.Name(kBSInAppNotificationDidAppear), object: nil, queue: OperationQueue.main) { [weak self] notification in
             self?.activityIndicatorView?.stopAnimating()
         }
     }
@@ -87,6 +91,7 @@ class CustomThemeInboxViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func setupTableView() {
+        self.title = "Custom Inbox"
         tableView.tableFooterView = UIView()
         tableView.dataSource = self
         tableView.delegate = self
@@ -155,7 +160,6 @@ extension CustomThemeInboxViewController {
     
     func handleDidSelectRowAt(indexPath: IndexPath) {
         let message: BlueshiftInboxMessage = viewmodel?.item(at: indexPath) ?? BlueshiftInboxMessage()
-        message.readStatus = true
         self.activityIndicatorView?.startAnimating()
         tableView.reloadRows(at: [indexPath], with: .automatic)
         BlueshiftInboxManager.showNotification(for: message, inboxInAppDelegate: self);
@@ -177,7 +181,10 @@ extension CustomThemeInboxViewController {
     }
 }
 
+// Make sure you implement the `BlueshiftInboxInAppNotificationDelegate` protocol
+// even if you dont add implementation for any of its methods.
 extension CustomThemeInboxViewController: BlueshiftInboxInAppNotificationDelegate {
+    //custom deep link handling by overriding default deep link behaviour
     func inboxInAppNotificationActionTapped(withDeepLink deepLink: String?, options: [String : Any] = [:]) {
         //handle inbox originated in-app notification deep links
         let vc = UIViewController()
@@ -186,14 +193,18 @@ extension CustomThemeInboxViewController: BlueshiftInboxInAppNotificationDelegat
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: vc.view.frame.size.width - 50, height: 400))
         label.text = deepLink
         label.textColor = .black
-        
+
         label.center = vc.view.center
         label.numberOfLines = 0
         vc.view.addSubview(label)
-        navigationController?.show(vc, sender: nil)
+        self.show(vc, sender: nil)
     }
-    
+
     func isInboxNotificationActionTappedImplementedByHostApp() -> Bool {
         return true
+    }
+
+    func getInboxWindowScene() -> UIWindowScene? {
+        return view.window?.windowScene
     }
 }

@@ -9,24 +9,28 @@ import UIKit
 import BlueShift_iOS_SDK
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let config: BlueShiftConfig = BlueShiftConfig()
-        config.apiKey = ""
+        //Set account api key, and you can try sending the in-app notifications using test sends.
+        //Also comment the `loadMessages` call.
+        config.apiKey = "YOUR API KEY"
         config.enablePushNotification = true
         config.enableInAppNotification = true
         
         //enable mobile inbox
         config.enableMobileInbox = true
         
-        config.userNotificationDelegate = self
+        // optional, debug enabled for development purpose.
         config.debug = true
+        
         config.blueshiftDeviceIdSource = .UUID
         config.applicationLaunchOptions = launchOptions ?? [:]
         BlueShift.initWithConfiguration(config)
         
+        //Comment load messages if you want to try test sends from you account.
         loadMessages()
 
         return true
@@ -56,6 +60,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         BlueShift.sharedInstance()?.appDelegate?.handleRemoteNotification(userInfo, for: application, fetchCompletionHandler: completionHandler)
     }
     
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        // handle deep links received from the inbox in-app notifications
+        print("received deep link - \(url)")
+        return true
+    }
+}
+
+extension AppDelegate {
     func loadMessages() {
         BlueshiftInboxManager.deleteAllInboxMessagesFromDB();
         if let url = Bundle.main.url(forResource: "Inbox", withExtension: "json") {
@@ -72,4 +84,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
     }
 }
-

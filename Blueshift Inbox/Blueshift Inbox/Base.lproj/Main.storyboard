@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="npi-Ru-cui">
-                                <rect key="frame" x="20" y="112" width="374" height="639"/>
+                                <rect key="frame" x="20" y="112" width="374" height="659"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzM-wf-RwZ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34.5"/>
@@ -37,15 +37,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWX-mb-e85">
-                                        <rect key="frame" x="0.0" y="99" width="374" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="99" width="374" height="54.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Default Inbox UI with Navigation Controller"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Default Inbox UI with Navigation Controller + deep link handling"/>
                                         <connections>
                                             <action selector="showDefaultInboxUsingNavigationController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4w9-uw-E50"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gs5-fg-adg">
-                                        <rect key="frame" x="0.0" y="148.5" width="374" height="54.5"/>
+                                        <rect key="frame" x="0.0" y="168.5" width="374" height="54.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Default Inbox UI with Custom Cell as default cell "/>
                                         <connections>
@@ -53,7 +53,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l4-ea-QLx">
-                                        <rect key="frame" x="0.0" y="218" width="374" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="238" width="374" height="34.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title=" Custom default cell Inbox using storyboard">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
@@ -63,7 +63,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHa-4t-G86">
-                                        <rect key="frame" x="0.0" y="267.5" width="374" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="287.5" width="374" height="34.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Default UI with custom date format"/>
                                         <connections>
@@ -71,7 +71,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U96-MR-7vg">
-                                        <rect key="frame" x="0.0" y="317" width="374" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="337" width="374" height="34.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Default Inbox UI with sort by Date"/>
                                         <connections>
@@ -79,7 +79,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-Np-JhH">
-                                        <rect key="frame" x="0.0" y="366.5" width="374" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="386.5" width="374" height="34.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Default Inbox UI with Message Filter"/>
                                         <connections>
@@ -87,7 +87,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iH-9z-KoZ">
-                                        <rect key="frame" x="0.0" y="416" width="374" height="54.5"/>
+                                        <rect key="frame" x="0.0" y="436" width="374" height="54.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Default Inbox with Message Filter using Storyboard "/>
                                         <connections>
@@ -95,7 +95,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hQ-cf-vk0" userLabel="Inbox for Custom cell with extra fields">
-                                        <rect key="frame" x="0.0" y="485.5" width="374" height="54.5"/>
+                                        <rect key="frame" x="0.0" y="505.5" width="374" height="54.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Default  Inbox for Custom cell with additional fields "/>
                                         <connections>
@@ -103,7 +103,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7my-P6-5da">
-                                        <rect key="frame" x="0.0" y="555" width="374" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="575" width="374" height="34.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Default Inbox For TabBarController "/>
                                         <connections>
@@ -111,7 +111,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h6-7A-e6T">
-                                        <rect key="frame" x="0.0" y="604.5" width="374" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="624.5" width="374" height="34.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Custom Inbox UI with APP Theme"/>
                                         <connections>
@@ -230,25 +230,6 @@
             <point key="canvasLocation" x="5694" y="-589"/>
         </scene>
         <!--Inbox-->
-        <scene sceneID="NRg-64-SSB">
-            <objects>
-                <viewController title="Inbox" id="BtI-od-ZfW" customClass="BlueshiftInboxViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AF4-Ci-T5y">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="bvf-xT-Wlq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Multiple Cell Inbox" id="PFM-WV-Agg"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="inboxDelegateName" value="Blueshift_Inbox.MultipleCellsInboxDelegate"/>
-                    </userDefinedRuntimeAttributes>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gsd-i3-BbK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5819" y="489"/>
-        </scene>
-        <!--Inbox-->
         <scene sceneID="NQL-cJ-OcN">
             <objects>
                 <viewController title="Inbox" id="csu-ax-FoF" customClass="BlueshiftInboxViewController" sceneMemberID="viewController">
@@ -261,7 +242,7 @@
                     <tabBarItem key="tabBarItem" title="Custom Cell Inbox" id="Xku-Us-1Xp"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="customCellNibName" value="CustomInboxTableViewCell"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="inboxDelegateName" value="MessageFilterInboxDelgate"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="inboxDelegateName" value="Blueshift_Inbox.MessageFilterInboxDelgate"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="unreadBadgeColor">
                             <color key="value" systemColor="systemGreenColor"/>
                         </userDefinedRuntimeAttribute>
@@ -274,10 +255,30 @@
             </objects>
             <point key="canvasLocation" x="6504" y="-68"/>
         </scene>
-        <!--Default Inbox with Storyboard-->
+        <!--Multiple cells-->
+        <scene sceneID="m5E-2N-7T9">
+            <objects>
+                <viewController id="eOZ-51-pVt" customClass="BlueshiftInboxNavigationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8GH-TG-hJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RDF-Da-CFd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Multiple cells" id="bTF-H3-8lC"/>
+                    <navigationItem key="navigationItem" id="GDd-lA-NFO"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="inboxDelegateName" value="Blueshift_Inbox.MultipleCellsInboxDelegate"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnW-EJ-dbG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6227" y="728"/>
+        </scene>
+        <!--Default inbox-->
         <scene sceneID="B3I-gJ-LyN">
             <objects>
-                <viewController title="Default Inbox with Storyboard" id="YE4-35-he1" customClass="BlueshiftInboxViewController" sceneMemberID="viewController">
+                <viewController title="Default inbox" id="YE4-35-he1" customClass="BlueshiftInboxNavigationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sbi-ue-8mV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -286,12 +287,15 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="tLE-FY-u3c"/>
                     <navigationItem key="navigationItem" title="Default Inbox with Storyboard" id="iQk-FX-fgf"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="inboxDelegateName" value="Blueshift_Inbox.MobileInboxDelegate"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ig2-DP-d42" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1122" y="-1079"/>
         </scene>
-        <!--Custom default cell Inbox with storyboard-->
+        <!--Inbox -->
         <scene sceneID="eak-6K-R2F">
             <objects>
                 <viewController id="tJ3-pQ-eN3" customClass="BlueshiftInboxViewController" sceneMemberID="viewController">
@@ -301,7 +305,7 @@
                         <viewLayoutGuide key="safeArea" id="XZG-Ep-p5P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Custom default cell Inbox with storyboard" id="D9S-gx-bJD"/>
+                    <navigationItem key="navigationItem" title="Inbox " id="D9S-gx-bJD"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="customCellNibName" value="CustomInboxTableViewCell"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="unreadBadgeColor">
@@ -330,7 +334,7 @@
                     <connections>
                         <segue destination="jgg-B7-MpE" kind="relationship" relationship="viewControllers" id="zSS-1n-jXK"/>
                         <segue destination="csu-ax-FoF" kind="relationship" relationship="viewControllers" id="hHr-cy-72H"/>
-                        <segue destination="BtI-od-ZfW" kind="relationship" relationship="viewControllers" id="NvA-Ej-j4q"/>
+                        <segue destination="eOZ-51-pVt" kind="relationship" relationship="viewControllers" id="4Bs-eh-6YI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gl2-lW-Ic9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -12,10 +12,9 @@ public class MultipleCellsInboxDelegate: NSObject, BlueshiftInboxViewControllerD
     public var customCellNibNames: [String]? = ["OfferInboxTableViewCell", "CustomInboxTableViewCell"]
     
    public func getCustomCellNibName(for message: BlueshiftInboxMessage) -> String? {
-       let value = Int(message.createdAtDate?.timeIntervalSince1970 ?? 0) % 3
-       if (value == 0) {
+       if message.title!.contains("1") || message.title!.contains("3") {
            return "OfferInboxTableViewCell"
-       } else if(value == 1) {
+       } else if message.title!.contains("2") || message.title!.contains("5") {
            return "CustomInboxTableViewCell"
        } else {
            return nil
